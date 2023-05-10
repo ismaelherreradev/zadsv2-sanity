@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import { NavItem } from '@/types/nav';
 import { cn } from '@/lib/utils';
+import { NavItem } from '@/types/nav';
 
 interface MainNavProps {
   items?: NavItem[];

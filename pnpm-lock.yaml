@@ -75,9 +75,9 @@ devDependencies:
   eslint-plugin-react:
     specifier: ^7.32.2
     version: 7.32.2(eslint@8.40.0)
-  eslint-plugin-tailwindcss:
-    specifier: ^3.11.0
-    version: 3.11.0(tailwindcss@3.3.2)
+  eslint-plugin-simple-import-sort:
+    specifier: ^10.0.0
+    version: 10.0.0(eslint@8.40.0)
   postcss:
     specifier: ^8.4.23
     version: 8.4.23
@@ -87,6 +87,9 @@ devDependencies:
   prettier-plugin-organize-imports:
     specifier: ^3.2.2
     version: 3.2.2(prettier@2.8.8)(typescript@5.0.4)
+  prettier-plugin-tailwindcss:
+    specifier: ^0.2.8
+    version: 0.2.8(@ianvs/prettier-plugin-sort-imports@3.7.2)(prettier-plugin-organize-imports@3.2.2)(prettier@2.8.8)
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -1647,15 +1650,12 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: true
 
-  /eslint-plugin-tailwindcss@3.11.0(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-RaraOG4D6VXutKnoNvFQ4+frTWGJDKtezy1yCrGFS7Um1to/npDNdh2GL19IRoGB/eanbtwhxFXy+xyEw0grAg==}
-    engines: {node: '>=12.13.0'}
+  /eslint-plugin-simple-import-sort@10.0.0(eslint@8.40.0):
+    resolution: {integrity: sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==}
     peerDependencies:
-      tailwindcss: ^3.2.2
+      eslint: '>=5.0.0'
     dependencies:
-      fast-glob: 3.2.12
-      postcss: 8.4.23
-      tailwindcss: 3.3.2
+      eslint: 8.40.0
     dev: true
 
   /eslint-scope@7.2.0:
@@ -2914,6 +2914,60 @@ packages:
     dependencies:
       prettier: 2.8.8
       typescript: 5.0.4
+    dev: true
+
+  /prettier-plugin-tailwindcss@0.2.8(@ianvs/prettier-plugin-sort-imports@3.7.2)(prettier-plugin-organize-imports@3.2.2)(prettier@2.8.8):
+    resolution: {integrity: sha512-KgPcEnJeIijlMjsA6WwYgRs5rh3/q76oInqtMXBA/EMcamrcYJpyhtRhyX1ayT9hnHlHTuO8sIifHF10WuSDKg==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-pug': '*'
+      '@shopify/prettier-plugin-liquid': '*'
+      '@shufo/prettier-plugin-blade': '*'
+      '@trivago/prettier-plugin-sort-imports': '*'
+      prettier: '>=2.2.0'
+      prettier-plugin-astro: '*'
+      prettier-plugin-css-order: '*'
+      prettier-plugin-import-sort: '*'
+      prettier-plugin-jsdoc: '*'
+      prettier-plugin-organize-attributes: '*'
+      prettier-plugin-organize-imports: '*'
+      prettier-plugin-style-order: '*'
+      prettier-plugin-svelte: '*'
+      prettier-plugin-twig-melody: '*'
+    peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
+      '@prettier/plugin-pug':
+        optional: true
+      '@shopify/prettier-plugin-liquid':
+        optional: true
+      '@shufo/prettier-plugin-blade':
+        optional: true
+      '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+      prettier-plugin-twig-melody:
+        optional: true
+    dependencies:
+      '@ianvs/prettier-plugin-sort-imports': 3.7.2(prettier@2.8.8)
+      prettier: 2.8.8
+      prettier-plugin-organize-imports: 3.2.2(prettier@2.8.8)(typescript@5.0.4)
     dev: true
 
   /prettier@2.8.8:

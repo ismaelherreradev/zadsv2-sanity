@@ -96,8 +96,18 @@
 
 @layer components {
   .headline {
+    white-space: nowrap;
+    -webkit-background-clip: text;
+    letter-spacing: -0.03em;
+    padding-bottom: 0.2em;
+    margin-bottom: -0.2em;
+    line-height: 0.9;
+    color: transparent;
+    background-image: linear-gradient(135deg, var(--gradient));
+    background-position: var(--gradient-percentage) var(--gradient-percentage);
     font-weight: 500;
     font-feature-settings: normal;
+    background-size: var(--gradient-size) var(--gradient-size);
     letter-spacing: -0.03em;
     font-family: var(--lb-font-brand);
     line-height: 0.9;

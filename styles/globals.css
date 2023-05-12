@@ -37,7 +37,18 @@
   }
 
   .dark {
-    --background: 224 71% 4%;
+    --inner-gutter: 28px;
+    --outer-gutter: 38px;
+    --font-scale: 0.127;
+
+    --gradient-size: calc((100% * (var(--gradient-length) - 1)) / (var(--gradient-interval-size) - 1));
+    --gradient-animation-duration: 3s;
+    --gradient-percentage: calc(var(--gradient-progress) * 100%);
+    --gradient: #8e84ff, #d499ed, #f47b8f, #fabfb2, #fffad1, #95f3d9, #64b2ff, #8e84ff, #d499ed, #f47b8f;
+
+    --font-scale: 0.127;
+
+    --background: 252 100% 2%;
     --foreground: 213 31% 91%;
 
     --muted: 223 47% 11%;
@@ -76,6 +87,13 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
+
+@layer components {
+  .headline {
+    line-height: 0.9;
+    font-size: calc(var(--font-scale) * (min(1280px, 99vw) - 2 * var(--outer-gutter)));
   }
 }

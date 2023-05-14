@@ -25,45 +25,6 @@ export default function MainHeadline() {
         animate={
           {
             '--gradient-progress': [0, 1],
-            '--gradient-color-left': [
-              '#64b2ff',
-              '#ef81a1',
-              '#f47b8f',
-              '#fabfb2',
-              '#fffad1',
-              '#95f3d9',
-              '#64b2ff',
-              '#8e84ff',
-              '#d499ed',
-              '#f47b8f',
-              '#ef81a1',
-            ],
-            '--gradient-color-center': [
-              '#64b2ff',
-              '#ef81a1',
-              '#f47b8f',
-              '#fabfb2',
-              '#fffad1',
-              '#95f3d9',
-              '#64b2ff',
-              '#8e84ff',
-              '#d499ed',
-              '#f47b8f',
-              '#ef81a1',
-            ],
-            '--gradient-color-right': [
-              '#64b2ff',
-              '#ef81a1',
-              '#f47b8f',
-              '#fabfb2',
-              '#fffad1',
-              '#95f3d9',
-              '#64b2ff',
-              '#8e84ff',
-              '#d499ed',
-              '#f47b8f',
-              '#ef81a1',
-            ],
           } as any
         }
         transition={{

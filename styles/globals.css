@@ -4,6 +4,14 @@
 
 @layer base {
   :root {
+    --inner-gutter: 28px;
+    --outer-gutter: 38px;
+
+    --font-scale: 0.127;
+
+    --font-brand: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
 
@@ -37,20 +45,6 @@
   }
 
   .dark {
-    --inner-gutter: 28px;
-    --outer-gutter: 38px;
-    --font-scale: 0.127;
-
-    --gradient-size: calc((100% * (var(--gradient-length) - 1)) / (var(--gradient-interval-size) - 1));
-    --gradient-animation-duration: 3s;
-    --gradient-percentage: calc(var(--gradient-progress) * 100%);
-    --gradient: #8e84ff, #d499ed, #f47b8f, #fabfb2, #fffad1, #95f3d9, #64b2ff, #8e84ff, #d499ed, #f47b8f;
-
-    --font-scale: 0.127;
-
-    --font-brand: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
-
     --background: 252 100% 2%;
     --foreground: 213 31% 91%;
 
@@ -95,22 +89,38 @@
 }
 
 @layer components {
-  .headline {
-    white-space: nowrap;
-    -webkit-background-clip: text;
-    letter-spacing: -0.03em;
-    padding-bottom: 0.2em;
-    margin-bottom: -0.2em;
-    line-height: 0.9;
-    color: transparent;
+  .gradientprovider_provider {
+    --gradient-size: calc((100% * (var(--gradient-length) - 1)) / (var(--gradient-interval-size) - 1));
+    --gradient-animation-duration: 3s;
+    --gradient-percentage: calc(var(--gradient-progress) * 100%);
+    contain: content;
+  }
+
+  .sectionhero_headline {
+    font-size: calc(var(--font-scale) * (min(1280px, 99vw) - 2 * var(--outer-gutter)));
+  }
+
+  .gradientprovider_diagonal {
     background-image: linear-gradient(135deg, var(--gradient));
     background-position: var(--gradient-percentage) var(--gradient-percentage);
-    font-weight: 500;
-    font-feature-settings: normal;
     background-size: var(--gradient-size) var(--gradient-size);
-    letter-spacing: -0.03em;
-    font-family: var(--font-brand);
-    line-height: 0.9;
-    font-size: calc(var(--font-scale) * (min(1280px, 99vw) - 2 * var(--outer-gutter)));
+  }
+
+  @keyframes mask-reveal {
+    0% {
+      -webkit-mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 150% 0 /400% no-repeat;
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 150% 0 /400% no-repeat;
+      opacity: 0;
+    }
+
+    to {
+      -webkit-mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 0 /400% no-repeat;
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 0 /400% no-repeat;
+      opacity: 1;
+    }
+  }
+
+  .animate-mask-reveal {
+    animation: mask-reveal 1.8s cubic-bezier(0.33, 1, 0.68, 1) backwards;
   }
 }

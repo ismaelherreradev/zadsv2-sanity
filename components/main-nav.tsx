@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { cn } from '@/lib/utils';
 import { NavItem } from '@/types/nav';
 
 interface MainNavProps {
@@ -13,8 +12,8 @@ import Image from 'next/image';
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Image src={MainLogo} className="w-24" alt="Zads Logo" />
+      <Link href="/" className="flex items-center space-x-2">
+        <Image src={MainLogo} className="w-24" priority alt="Zads Logo" />
       </Link>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">

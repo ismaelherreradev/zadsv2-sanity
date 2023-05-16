@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, useTime, useMotionValue, useMotionTemplate, useTransform } from 'framer-motion';
-import { useEffect } from 'react';
+import { motion, useMotionValue } from 'framer-motion';
 
 export default function MainHeadline() {
   const colors = useMotionValue((360 / 10000) * (360 / 10000) * Math.random());
@@ -33,7 +32,7 @@ export default function MainHeadline() {
           ease: 'linear',
         }}
       >
-        <section className="animate-mask-reveal transform-gpu">
+        <section className="transform-gpu">
           <motion.h1 className="sectionhero_headline gradientprovider_diagonal mb-[0.2em] flex transform-gpu flex-col justify-start whitespace-nowrap bg-clip-text pb-[0.2em] text-center leading-[0.9] text-transparent [--font-scale:0.17] after:inline-block sm:[--font-scale:0.124] lg:[--font-scale:0.127]">
             Solución
             <br /> completa de <br />

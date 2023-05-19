@@ -1,4 +1,5 @@
 'use client';
+
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 
 import { fadeIn } from '@/lib/motion';
@@ -42,6 +43,7 @@ export default function CardRadialGradient({ title, content, index }: Props) {
         <CardContent className="mt-2">
           <p className="text-base font-light">{content}</p>
         </CardContent>
+        <div className="bg-noisy pointer-events-none absolute inset-0 z-10 rounded-xl md:rounded-2xl lg:rounded-3xl" />
       </Card>
     </motion.div>
   );

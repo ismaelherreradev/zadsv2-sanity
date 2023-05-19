@@ -1,10 +1,8 @@
 'use client';
 
-import { motion, useMotionValue } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function MainHeadline() {
-  const colors = useMotionValue((360 / 10000) * (360 / 10000) * Math.random());
-
   return (
     <>
       <motion.div

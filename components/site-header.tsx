@@ -9,7 +9,7 @@ export function SiteHeader() {
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-2">
-            <Button size={'sm'} variant={'outline'}>
+            <Button size={'sm'} variant={'outline'} className="hidden md:flex">
               Contactanos
             </Button>
             <Button size={'sm'} variant={'secondary'}>

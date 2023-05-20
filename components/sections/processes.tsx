@@ -34,7 +34,7 @@ export default function Processes() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="padding relative z-0 mx-auto max-w-7xl"
+      className="padding relative z-0 mx-auto"
     >
       <div className="pt-18">
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

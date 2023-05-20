@@ -40,7 +40,7 @@ export default function CardRadialGradient({ Icon, title, content, index }: Prop
         />
         <CardHeader className="pb-0">
           <Icon className="mb-2 h-8 w-8 text-[#F4B400]" />
-          <CardTitle className="text-xl">{title}</CardTitle>
+          <CardTitle className="font-serif text-xl">{title}</CardTitle>
         </CardHeader>
         <CardContent className="mt-2">
           <p className="text-base font-light">{content}</p>

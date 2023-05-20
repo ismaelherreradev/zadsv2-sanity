@@ -25,13 +25,14 @@ export default function MainHeadline() {
           } as any
         }
         transition={{
+          delay: 2,
           duration: 10,
           repeat: Infinity,
           ease: 'linear',
         }}
       >
         <section className="transform-gpu">
-          <motion.h1 className="sectionhero_headline gradientprovider_diagonal mb-[0.2em] flex transform-gpu flex-col justify-start whitespace-nowrap bg-clip-text pb-[0.2em] text-center leading-[0.9] text-transparent [--font-scale:0.17] after:inline-block sm:[--font-scale:0.124] lg:[--font-scale:0.127]">
+          <motion.h1 className="sectionhero_headline gradientprovider_diagonal mb-[0.2em] flex transform-gpu flex-col justify-start whitespace-nowrap bg-clip-text pb-[0.2em] text-center font-serif leading-[0.9] text-transparent [--font-scale:0.17] after:inline-block sm:[--font-scale:0.124] lg:[--font-scale:0.127]">
             Solución
             <br /> completa de <br />
             publicidad

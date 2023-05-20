@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { SiteHeader } from '@/components/site-header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { siteConfig } from '@/config/site';
-import { fontSans } from '@/lib/fonts';
+import { fontSans, fontSerif } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <>
       <html lang="en">
         <head />
-        <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+        <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable, fontSerif.variable)}>
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
             <div className="flex-1">{children}</div>

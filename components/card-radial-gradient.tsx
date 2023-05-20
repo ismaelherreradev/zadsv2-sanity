@@ -6,12 +6,13 @@ import { fadeIn } from '@/lib/motion';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 type Props = {
+  Icon: React.ComponentType<React.ComponentProps<'svg'> & { title?: string }>;
   index: number;
   title: string;
   content: string;
 };
 
-export default function CardRadialGradient({ title, content, index }: Props) {
+export default function CardRadialGradient({ Icon, title, content, index }: Props) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -38,6 +39,7 @@ export default function CardRadialGradient({ title, content, index }: Props) {
           }}
         />
         <CardHeader className="pb-0">
+          <Icon className="mb-2 h-8 w-8 text-[#F4B400]" />
           <CardTitle className="text-xl">{title}</CardTitle>
         </CardHeader>
         <CardContent className="mt-2">

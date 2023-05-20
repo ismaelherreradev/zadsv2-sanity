@@ -2,25 +2,26 @@
 
 import { staggerContainer } from '@/lib/motion';
 import { motion } from 'framer-motion';
+import { LayoutDashboard, LineChart, Target } from 'lucide-react';
 import CardRadialGradient from '../card-radial-gradient';
 
 const processes = [
   {
     id: 1,
-    icon: 'icon',
+    Icon: Target,
     title: 'Estrategía',
     content: 'Creación de estrategias personalizadas para su empresa que generan ventas, leads y reconocimiento.',
   },
   {
     id: 2,
-    icon: 'icon',
+    Icon: LayoutDashboard,
     title: 'Desarrollo',
     content:
       'En marcha la estrategia, damos un seguimiento estricto para garantizar un retorno a su inversión en publicidad.',
   },
   {
     id: 3,
-    icon: 'icon',
+    Icon: LineChart,
     title: 'Analisís',
     content: 'Profundo análisis de datos y reportes de resultados para mejorar el desempeño de campañas futuras.',
   },

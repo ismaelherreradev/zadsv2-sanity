@@ -3,7 +3,7 @@
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 
 import { fadeIn } from '@/lib/motion';
-import { ComponentProps, ComponentType } from 'react';
+import { ComponentProps, ComponentType, MouseEvent } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 type Props = {
@@ -17,7 +17,7 @@ export default function CardRadialGradient({ Icon, title, content, index }: Prop
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  function handleMouseMove({ clientX, clientY, currentTarget }: React.MouseEvent<HTMLDivElement>) {
+  function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent<HTMLDivElement>) {
     const { left, top } = currentTarget.getBoundingClientRect();
 
     mouseX.set(clientX - left);

@@ -1,10 +1,11 @@
+import ServiceAnimation from '../animation/services';
 import { Button } from '../ui/button';
 
 export default function Services() {
   return (
     <section className="container mx-auto py-24">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div>
+      <div className="grid grid-cols-1 items-center md:grid-cols-2">
+        <div className="text-center md:text-left">
           <span className="font-mono uppercase tracking-[5px] text-z-yellow">Servicios</span>
           <h2 className="max-w-md font-serif text-6xl font-medium text-[#f7f7f8]">Zads Marketing</h2>
           <p className="my-4 max-w-md text-xl text-[#959499]">
@@ -12,7 +13,7 @@ export default function Services() {
             <span className="font-bold underline decoration-z-yellow">gestión avanzada</span> de publicidad digital en
             multiples plataformas.
           </p>
-          <Button size={'lg'} variant={'default'} className="flex text-lg">
+          <Button size={'lg'} variant={'default'} className="mx-auto flex text-lg md:m-0">
             Agenda una reunión ahora
             <svg
               aria-hidden="true"
@@ -31,7 +32,9 @@ export default function Services() {
             </svg>
           </Button>
         </div>
-        <div></div>
+        <div>
+          <ServiceAnimation />
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { SVGProps } from 'react';
+
 export default function ServiceAnimation(props: SVGProps<SVGSVGElement>) {
   return (
     <div className="relative mt-6 md:mt-0">

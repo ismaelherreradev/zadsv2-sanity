@@ -11,8 +11,8 @@ export default function Globe() {
 
     const globe = createGlobe(canvasRef.current as HTMLCanvasElement, {
       devicePixelRatio: 2,
-      width: 800 * 2,
-      height: 800 * 2,
+      width: 700 * 2,
+      height: 700 * 2,
       phi: 0,
       dark: 1,
       theta: 0.3,
@@ -41,10 +41,6 @@ export default function Globe() {
   }, []);
 
   return (
-    <canvas
-      className="absolute -right-72 -top-48 z-10 aspect-square h-full w-auto overflow-hidden rounded-xl mix-blend-screen md:rounded-2xl lg:rounded-3xl"
-      ref={canvasRef}
-      style={{ width: 800, height: 800, maxWidth: '100%' }}
-    />
+    <canvas className="mx-auto aspect-square" ref={canvasRef} style={{ width: 700, height: 700, maxWidth: '100%' }} />
   );
 }

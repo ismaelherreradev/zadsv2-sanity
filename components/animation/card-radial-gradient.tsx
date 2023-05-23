@@ -1,10 +1,11 @@
 'use client';
 
-import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
+import { motion, useMotionTemplate } from 'framer-motion';
 
+import useFramerMouseMove from '@/components/hooks/useFramerMouseMove';
 import { fadeIn } from '@/lib/motion';
-import { ComponentProps, ComponentType, MouseEvent } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import type { ComponentProps, ComponentType } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 type Props = {
   Icon: ComponentType<ComponentProps<'svg'> & { title?: string }>;
@@ -14,15 +15,7 @@ type Props = {
 };
 
 export default function CardRadialGradient({ Icon, title, content, index }: Props) {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  function handleMouseMove({ clientX, clientY, currentTarget }: MouseEvent<HTMLDivElement>) {
-    const { left, top } = currentTarget.getBoundingClientRect();
-
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
-  }
+  const { mouseX, mouseY, handleMouseMove } = useFramerMouseMove();
 
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>

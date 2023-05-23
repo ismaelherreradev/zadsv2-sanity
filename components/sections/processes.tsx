@@ -3,7 +3,7 @@
 import { staggerContainer } from '@/lib/motion';
 import { motion } from 'framer-motion';
 import { LayoutDashboard, LineChart, Target } from 'lucide-react';
-import CardRadialGradient from '../card-radial-gradient';
+import CardRadialGradient from '../animation/card-radial-gradient';
 
 const processes = [
   {

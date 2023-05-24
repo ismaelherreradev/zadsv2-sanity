@@ -41,7 +41,7 @@ function List() {
       <div className="pt-18">
         <div className="mt-10 grid grid-cols-1 gap-6">
           {benefits.map((process, index) => (
-            <CardRadialGradient index={index} key={process.id} {...process} />
+            <CardRadialGradient index={index} key={process.id} {...process} direction="left" />
           ))}
         </div>
       </div>
@@ -51,7 +51,7 @@ function List() {
 
 export default function Benefits() {
   return (
-    <section className="container mx-auto py-24">
+    <section className="container mx-auto overflow-hidden py-24">
       <div className="text-center">
         <span className="font-mono uppercase tracking-[5px] text-z-yellow">Beneficios</span>
         <h2 className="mx-auto font-serif text-4xl font-medium text-[#f7f7f8] md:max-w-xl md:px-0 md:text-5xl lg:max-w-2xl lg:text-6xl xl:max-w-3xl">
@@ -61,7 +61,7 @@ export default function Benefits() {
           Segmentación de publicos, para alcanzar de manera directa a tu cliente ideal.
         </p>
       </div>
-      <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2">
+      <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <Globe />
         <List />
       </div>

@@ -12,13 +12,14 @@ type Props = {
   index: number;
   title: string;
   content: string;
+  direction?: 'up' | 'down' | 'left' | 'right';
 };
 
-export default function CardRadialGradient({ Icon, title, content, index }: Props) {
+export default function CardRadialGradient({ Icon, title, content, index, direction = 'up' }: Props) {
   const { mouseX, mouseY, handleMouseMove } = useFramerMouseMove();
 
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn(direction, 'spring', index * 0.5, 0.75)}>
       <Card onMouseMove={handleMouseMove} className="group relative rounded-3xl border border-[#f7f7f814] bg-[#15131b]">
         <motion.div
           className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 transition duration-300 group-hover:opacity-100"

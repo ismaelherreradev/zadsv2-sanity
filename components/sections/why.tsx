@@ -7,6 +7,19 @@ export default function Why() {
           Todos tus productos y servicios en múltiples plataformas automáticamente.
         </h2>
       </div>
+      <div className="grid grid-cols-1 gap-6 py-24 md:grid-cols-2">
+        <ul className="list-disc space-y-4 font-serif text-xl text-[#959499]">
+          <li>Anuncios de generación de leads, ventas online, reconocimiento y más.</li>
+          <li>
+            Estrategias avanzadas de marketing digital para que consigas la mayor cantidad de clientes y ventas
+            posibles, resultados que incluso superen tus espectativas.
+          </li>
+          <li>
+            Reducción de costos en marketing para tu empresa y obtención de miles de datos para su posterior análisis.{' '}
+          </li>
+          <li>Segmentación avanzada de publicos, para alcanzar de manera directa a tu cliente ideal. </li>
+        </ul>
+      </div>
     </section>
   );
 }

@@ -40,7 +40,5 @@ export default function Globe() {
     };
   }, []);
 
-  return (
-    <canvas className="mx-auto aspect-square" ref={canvasRef} style={{ width: 700, height: 700, maxWidth: '100%' }} />
-  );
+  return <canvas className="mx-auto aspect-square w-fit" ref={canvasRef} style={{ width: 700, height: 700 }} />;
 }

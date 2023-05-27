@@ -7,7 +7,7 @@ export default function Why() {
           Todos tus productos y servicios en múltiples plataformas automáticamente.
         </h2>
       </div>
-      <div className="grid grid-cols-1 gap-6 py-24 md:grid-cols-2">
+      <div className="mx-auto grid max-w-xl grid-cols-1 items-center gap-6 py-24">
         <ul className="list-disc space-y-4 font-serif text-xl text-[#959499]">
           <li>Anuncios de generación de leads, ventas online, reconocimiento y más.</li>
           <li>

@@ -1,5 +1,6 @@
 import MainHeadline from './main-headline';
 import Processes from './sections/processes';
+import SocialIcons from './social-icons';
 import { Button } from './ui/button';
 
 export default function Mainheader() {
@@ -11,6 +12,9 @@ export default function Mainheader() {
         <span className="font-semibold underline decoration-z-yellow">Google Ads</span>,{' '}
         <span className="font-semibold underline decoration-[#4285F4]">Meta Ads</span> y más...
       </p>
+      <div className="mx-auto mb-10 max-w-sm">
+        <SocialIcons />
+      </div>
       <Button size={'lg'} variant={'default'} className="mx-auto flex text-lg">
         Agenda una reunión ahora
         <svg

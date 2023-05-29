@@ -15,21 +15,27 @@ export default function Mainheader() {
       <div className="mx-auto mb-10 max-w-sm">
         <SocialIcons />
       </div>
-      <Button size={'lg'} variant={'default'} className="mx-auto flex text-lg">
-        Agenda una reunión ahora
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="-mr-1 ml-1.5 fill-current"
-        >
-          <path d="m9.013 13-.962-.954 3.34-3.35H2V7.304h9.392L8.05 3.96 9.013 3 14 8l-4.987 5Z" fill="currentFill" />
-        </svg>
-      </Button>
+      <div className="flex justify-center space-x-4">
+        <Button size={'lg'} variant={'outline'} className=" text-lg">
+          Suscríbete a nuestro newsletter
+        </Button>
+        <Button size={'lg'} variant={'default'} className="text-lg">
+          Agenda una reunión ahora
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="-mr-1 ml-1.5 fill-current"
+          >
+            <path d="m9.013 13-.962-.954 3.34-3.35H2V7.304h9.392L8.05 3.96 9.013 3 14 8l-4.987 5Z" fill="currentFill" />
+          </svg>
+        </Button>
+      </div>
+
       <Processes />
     </section>
   );

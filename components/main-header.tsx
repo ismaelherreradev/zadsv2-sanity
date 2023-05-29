@@ -15,7 +15,7 @@ export default function Mainheader() {
       <div className="mx-auto mb-10 max-w-sm">
         <SocialIcons />
       </div>
-      <div className="flex justify-center space-x-4">
+      <div className="flex flex-wrap justify-center space-x-4">
         <Button size={'lg'} variant={'outline'} className=" text-lg">
           Suscríbete a nuestro newsletter
         </Button>

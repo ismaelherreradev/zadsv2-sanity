@@ -13,7 +13,7 @@ export function SiteHeader() {
               Contactanos
             </Button>
             <Button size={'sm'} variant={'secondary'}>
-              Agendar reunión
+              Agenda una reunión ahora
               <svg
                 aria-hidden="true"
                 focusable="false"

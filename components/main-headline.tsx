@@ -32,8 +32,8 @@ export default function MainHeadline() {
         }}
       >
         <section className="transform-gpu">
-          <motion.h1 className="sectionhero_headline gradientprovider_diagonal mb-[0.2em] flex transform-gpu flex-col justify-start whitespace-nowrap bg-clip-text pb-[0.2em] text-center font-serif leading-[0.9] text-transparent [--font-scale:0.10] after:inline-block lg:[--font-scale:0.10]">
-            Solución completa de <br />
+          <motion.h1 className="sectionhero_headline gradientprovider_diagonal flex transform-gpu flex-col justify-start whitespace-nowrap bg-clip-text pb-[0.2em] text-center font-serif leading-[0.9] text-transparent [--font-scale:0.10] after:inline-block lg:[--font-scale:0.10]">
+            Solución <br /> completa de <br />
             publicidad digital
           </motion.h1>
         </section>

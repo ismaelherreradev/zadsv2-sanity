@@ -1,17 +1,17 @@
-import ServiceAnimation from '../animation/services';
+import GetInTouchForm from '../get-in-touch-form';
 import { Button } from '../ui/button';
 
-export default function Services() {
+export default function GetInTouch() {
   return (
-    <section className="container mx-auto py-24">
+    <section className="py-18 container mx-auto">
       <div className="grid grid-cols-1 items-center md:grid-cols-2">
         <div className="text-center md:text-left">
-          <span className="font-mono uppercase tracking-[5px] text-z-yellow">Servicios</span>
-          <h2 className="font-serif text-6xl font-medium text-[#f7f7f8] md:max-w-md">Zads Marketing</h2>
-          <p className="my-4 text-xl text-[#959499] md:max-w-md">
-            Zads® se especializa en la colocación y{' '}
-            <span className="font-bold underline decoration-z-yellow">gestión avanzada</span> de publicidad digital en
-            multiples plataformas.
+          <span className="font-mono uppercase tracking-[5px] text-z-yellow">Contáctanos</span>
+          <h2 className="font-serif text-6xl font-medium text-[#f7f7f8] md:max-w-lg">¡Hablemos!</h2>
+          <p className="my-4 text-xl text-[#959499] md:max-w-lg">
+            Tanto si es una pequeña empresa como si es una gran empresa, nos interesa saber cómo podemos ayudarle a
+            resolver problemas. Puede llamarnos o escribir algunas notas en el formulario de contacto y nos pondremos en
+            contacto de inmediato.
           </p>
           <Button size={'lg'} variant={'default'} className="mx-auto flex text-lg md:m-0">
             Agenda una reunión ahora
@@ -32,8 +32,8 @@ export default function Services() {
             </svg>
           </Button>
         </div>
-        <div>
-          <ServiceAnimation />
+        <div className="mt-20 lg:mt-0">
+          <GetInTouchForm />
         </div>
       </div>
     </section>

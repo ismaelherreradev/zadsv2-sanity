@@ -10,13 +10,13 @@ import { Button } from './ui/button';
 
 const formSchema = z.object({
   username: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
+    message: 'El nombre de usuario debe tener al menos 2 caracteres.',
   }),
   email: z.string().email({
-    message: 'Please enter a valid email.',
+    message: 'Por favor introduzca una dirección de correo electrónico válida.',
   }),
   message: z.string().min(10, {
-    message: 'Message must be at least 10 characters.',
+    message: 'El mensaje debe tener al menos 10 caracteres.',
   }),
 });
 

@@ -47,7 +47,7 @@ export default function GetInTouchForm() {
               <FormItem>
                 <FormLabel>Nombre completo</FormLabel>
                 <FormControl>
-                  <Input placeholder="Por favor ingresa tu nombre completo" {...field} />
+                  <Input placeholder="Por favor ingresa tu nombre completo" {...field} className="border-[#f7f7f814]" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -61,7 +61,11 @@ export default function GetInTouchForm() {
               <FormItem>
                 <FormLabel>Correo electrónico</FormLabel>
                 <FormControl>
-                  <Input placeholder="Por favor introduzca su correo electrónico" {...field} />
+                  <Input
+                    placeholder="Por favor introduzca su correo electrónico"
+                    {...field}
+                    className="border-[#f7f7f814]"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -75,7 +79,7 @@ export default function GetInTouchForm() {
               <FormItem>
                 <FormLabel>Mensaje</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="¿Cómo podemos ayudarte?" {...field} />
+                  <Textarea placeholder="¿Cómo podemos ayudarte?" {...field} className="border-[#f7f7f814]" />
                 </FormControl>
                 <FormMessage />
               </FormItem>

@@ -153,4 +153,16 @@
   .bubble_leftRight4 {
     animation: bubble_leftRightAnimation4 5s ease-in-out infinite alternate;
   }
+
+  .bg-radial-light {
+    background-image: radial-gradient(73% 73% at -12.39% 4.13%, hsla(256, 7%, 97%, 0.09) 0, hsla(256, 7%, 97%, 0) 100%);
+  }
+
+  .border-bubble {
+    border-color: hsla(256, 7%, 97%, 0.08);
+  }
+
+  .bubble-circle {
+    @apply after:bg-radial-light border-bubble relative -left-4 flex aspect-square w-20 items-center justify-center overflow-hidden rounded-full border bg-[#222225] after:absolute after:inset-0 after:rounded-full sm:w-24 md:w-32;
+  }
 }

@@ -88,6 +88,45 @@
     }
   }
 
+  @keyframes bubble_leftRightAnimation {
+    0% {
+      transform: translate(-40%, 8%);
+    }
+    to {
+      transform: translate(80%);
+    }
+  }
+
+  @keyframes bubble_leftRightAnimation2 {
+    0% {
+      transform: translate(35%, 4%);
+    }
+
+    to {
+      transform: translate(75%, 10%);
+    }
+  }
+
+  @keyframes bubble_leftRightAnimation3 {
+    0% {
+      transform: translate(-35%, 2%);
+    }
+
+    to {
+      transform: translate(-100%, 12%);
+    }
+  }
+
+  @keyframes bubble_leftRightAnimation4 {
+    0% {
+      transform: translate(35%);
+    }
+
+    to {
+      transform: translate(100%, 3%);
+    }
+  }
+
   .animate-mask-reveal {
     animation: mask-reveal 1.8s cubic-bezier(0.33, 1, 0.68, 1) backwards;
   }
@@ -97,5 +136,21 @@
     background-repeat: repeat;
     background-size: 182px;
     opacity: 0.03;
+  }
+
+  .bubble_leftRight {
+    animation: bubble_leftRightAnimation 8s ease-in-out infinite alternate;
+  }
+
+  .bubble_leftRight2 {
+    animation: bubble_leftRightAnimation2 6s ease-in-out infinite alternate;
+  }
+
+  .bubble_leftRight3 {
+    animation: bubble_leftRightAnimation3 7s ease-in-out infinite alternate;
+  }
+
+  .bubble_leftRight4 {
+    animation: bubble_leftRightAnimation4 5s ease-in-out infinite alternate;
   }
 }

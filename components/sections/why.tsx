@@ -1,3 +1,5 @@
+import SocialBubbleAnimation from '../animation/social-bubble';
+
 export default function Why() {
   return (
     <section className="container mx-auto py-24">
@@ -7,7 +9,7 @@ export default function Why() {
           Todos tus productos y servicios en múltiples plataformas automáticamente.
         </h2>
       </div>
-      <div className="mx-auto grid max-w-xl grid-cols-1 items-center gap-6 py-24">
+      <div className="mx-auto grid grid-cols-1 items-center gap-6 py-24 md:grid-cols-2">
         <ul className="list-disc space-y-4 font-serif text-xl text-[#959499]">
           <li>Anuncios de generación de leads, ventas online, reconocimiento y más.</li>
           <li>
@@ -19,6 +21,7 @@ export default function Why() {
           </li>
           <li>Segmentación avanzada de publicos, para alcanzar de manera directa a tu cliente ideal. </li>
         </ul>
+        <SocialBubbleAnimation />
       </div>
     </section>
   );

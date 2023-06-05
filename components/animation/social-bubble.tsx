@@ -9,8 +9,7 @@ export default function SocialBubbleAnimation() {
       <div className="relative flex h-full flex-col overflow-y-hidden">
         <motion.div
           className="z-10 flex min-w-full flex-[0_0_auto] flex-col items-center"
-          initial={{ y: 700 }}
-          animate={{ y: -510 }}
+          animate={{ y: ['0%', '-100%', '0%'] }}
           transition={{ repeat: Infinity, duration: 30 }}
         >
           <div className="bubble_leftRight3 bubble-circle">
@@ -29,13 +28,6 @@ export default function SocialBubbleAnimation() {
             <Icons.linkedin className="h-12 w-12" />
             <div className="bg-noisy pointer-events-none absolute inset-0 z-10 rounded-xl md:rounded-2xl lg:rounded-3xl" />
           </div>
-        </motion.div>
-        <motion.div
-          className="z-10 flex min-w-full flex-[0_0_auto] flex-col items-center"
-          initial={{ y: 490 * 2 }}
-          animate={{ y: 530 * -2 }}
-          transition={{ repeat: Infinity, duration: 60 }}
-        >
           <div className="bubble_leftRight3 bubble-circle">
             <Icons.youtube className="h-12 w-12" />
             <div className="bg-noisy pointer-events-none absolute inset-0 z-10 rounded-xl md:rounded-2xl lg:rounded-3xl" />
@@ -54,7 +46,7 @@ export default function SocialBubbleAnimation() {
           </div>
         </motion.div>
       </div>
-      <div className="absolute -bottom-10 z-20 h-20 w-full bg-background blur-lg "></div>
+      <div className="absolute -bottom-10 z-20 h-20 w-full bg-background blur-lg"></div>
       <div className="absolute inset-0 -top-10 z-20 h-20 w-full bg-background blur-lg "></div>
     </div>
   );

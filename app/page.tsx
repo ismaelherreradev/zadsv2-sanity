@@ -1,6 +1,7 @@
 import Mainheader from '@/components/main-header';
 import Benefits from '@/components/sections/benefits';
 import GetInTouch from '@/components/sections/get-in-touch';
+import Newsletter from '@/components/sections/newsletter';
 import Services from '@/components/sections/services';
 import Why from '@/components/sections/why';
 
@@ -11,6 +12,7 @@ export default function IndexPage() {
       <Services />
       <Benefits />
       <Why />
+      {/* <Newsletter /> */}
       <GetInTouch />
     </section>
   );

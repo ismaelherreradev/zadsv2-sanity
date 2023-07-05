@@ -1,3 +1,5 @@
+'use client'
+
 import createGlobe from 'cobe';
 import { useSpring } from 'framer-motion';
 import { useEffect, useRef } from 'react';

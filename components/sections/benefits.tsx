@@ -1,7 +1,5 @@
 'use client';
 
-import Globe from '../animation/globe';
-
 import { staggerContainer } from '@/lib/motion';
 import { motion } from 'framer-motion';
 import { AlarmCheck, RefreshCw, Scroll } from 'lucide-react';
@@ -39,7 +37,7 @@ function List() {
       className="padding relative z-0 mx-auto"
     >
       <div className="pt-18">
-        <div className="mt-10 grid grid-cols-1 gap-6">
+        <div className="mt-10 grid grid-cols-3 gap-6">
           {benefits.map((process, index) => (
             <CardRadialGradient index={index} key={process.id} {...process} direction="left" />
           ))}
@@ -61,8 +59,7 @@ export default function Benefits() {
           Segmentación de publicos, para alcanzar de manera directa a tu cliente ideal.
         </p>
       </div>
-      <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
-        <Globe />
+      <div>
         <List />
       </div>
     </section>
